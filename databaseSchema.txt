@@ -1,0 +1,17 @@
+DROP DATABASE IF EXISTS asgmnt_two;  
+
+CREATE DATABASE IF NOT EXISTS asgmnt_two;
+
+CREATE TABLE trainer(
+id INT NOT NULL AUTO_INCREMENT,
+firstname varchar(50) NOT NULL,
+lastname varchar(50) UNIQUE NOT NULL,
+subjs VARCHAR(20) NOT NULL,
+PRIMARY KEY (trainerId)
+) AUTO_INCREMENT = 1; 
+
+INSERT INTO trainer (firstname, lastname, subjects) 
+VALUES  ("James","Gosling","Programming"),
+        ("George","Boole","Mathematics"),
+		("Charles","Babbage","Mathematics"),
+        ("Dennis","Ritchie","Programming");
